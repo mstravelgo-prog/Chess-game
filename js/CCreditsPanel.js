@@ -71,7 +71,7 @@ var oText = new CTLText(_oContainer,
             iX - iWidth/2, iY - iHeight/2, iWidth, iHeight, 
             70, "center", "#402604", PRIMARY_FONT, 1,
             2, 2,
-            " ",   
+            "Rukaman Rathore",   
             true, true, false,
             false );
 
@@ -109,6 +109,7 @@ var oText = new CTLText(_oContainer,
     
     
 };
+
 
 
 
