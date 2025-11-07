@@ -55,13 +55,25 @@ function CCreditsPanel(){
                     false );
 
         
-        oSprite = s_oSpriteLibrary.getSprite('logo_ctl');
+       /* oSprite = s_oSpriteLibrary.getSprite('logo_ctl');
         _oButLogo = createBitmap(oSprite);
         _oButLogo.regX = oSprite.width/2;
         _oButLogo.regY = oSprite.height/2;
         _oButLogo.x = CANVAS_WIDTH/2;
         _oButLogo.y = CANVAS_HEIGHT/2;
-        _oContainer.addChild(_oButLogo);
+        _oContainer.addChild(_oButLogo); */
+		var iWidth = 400;
+var iHeight = 100;
+var iX = CANVAS_WIDTH / 2;
+var iY = CANVAS_HEIGHT / 2;
+
+var oText = new CTLText(_oContainer, 
+            iX - iWidth/2, iY - iHeight/2, iWidth, iHeight, 
+            70, "center", "#402604", PRIMARY_FONT, 1,
+            2, 2,
+            "MS Studio",   
+            true, true, false,
+            false );
 
        
         var iWidth = oSpriteMsgBox.width-120;
@@ -72,7 +84,7 @@ function CCreditsPanel(){
                     iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
                     68, "center", "#402604", PRIMARY_FONT, 1,
                     2, 2,
-                    "www.primegame.co",
+                    "www.rukamanrathore.com",
                     true, true, false,
                     false );
         
@@ -90,12 +102,13 @@ function CCreditsPanel(){
     };
     
     this._onLogoButRelease = function(){
-        window.open("http://primegame.co","_blank");
+        window.open("http://www.rukamanrathore.com","_blank");
     };
     
     this._init();
     
     
 };
+
 
 
